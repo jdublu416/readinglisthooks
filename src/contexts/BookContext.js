@@ -14,7 +14,16 @@ const BookContextProvider = props => {
     localStorage.setItem('books', JSON.stringify(books));
   }, [books]);
 
-  // const [books, setBooks] = useState([
+  
+  return (
+    <BookContext.Provider value={{ books, dispatch }}>
+      {props.children}
+    </BookContext.Provider>
+  );
+};
+export default BookContextProvider;
+
+// const [books, setBooks] = useState([
   //   {
   //     title: 'Name of the Wind',
   //     author: 'Patrick Rothfuss',
@@ -42,10 +51,3 @@ const BookContextProvider = props => {
   /* 
   to change things for the use of useReducer hook, you use in lieu of useState...so you remove the hook from the import statement and also the addBook function and deleteBook from the value on line 39
   */
-  return (
-    <BookContext.Provider value={{ books, dispatch }}>
-      {props.children}
-    </BookContext.Provider>
-  );
-};
-export default BookContextProvider;

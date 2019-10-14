@@ -4,25 +4,29 @@ body {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #bbb7c5;
+  background: url(./images/henry-be-lc7xcWebECc-unsplash.jpg) no-repeat fixed center;
+  font-size: 18px;
 }
 .App {
   color: #fff;
   width: 90%;
   max-width: 800px;
   margin: 20px auto;
-  color: #433568;
+  color: #002933;
   border-radius: 15px;
-  background: #ccc;
+  background: rgb(164, 176, 182);
   padding-bottom: .25rem;
+  opacity: 0.9;
 }
 /* *****Navbar */
 .navbar {
   padding: 10px 20px;
   text-align: center;
-  background: #2a126d;
+  background: #01404b;
   border-radius: 15px 15px 0 0;
   color: #fff;
+  opacity: 0.8;
+  
 }
 .navbar h1 {
   margin: 10px 0;
@@ -54,7 +58,7 @@ body {
 
 .book-list .author {
   font-weight: lighter;
-  color: rgb(139, 98, 187);
+  color: rgb(37, 143, 175);
 }
 
 .empty {
@@ -72,13 +76,17 @@ input[type='text']{
     box-sizing: border-box;
     margin: 6px 0;
     height: 1.8rem;
+    border-radius: 2px;
+    border: 0.1rem outset teal;
+    font-size: 0.8rem;
 }
 input[type='submit'] {
     margin: 10px 0;
-    background: #2a126d;
+    background: #024149;
     color: #fff;
-    padding: 5px 20px;
+    padding: 10px 20px;
     display: block;
+    border-radius: 5px;
     justify-content: center;
     align-items: center;
 }

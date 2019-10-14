@@ -17,7 +17,7 @@ const BookForm = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <h3 style={{ textAlign: 'center' }}>Enter a book...</h3>
+      {/* <h2 style={{ textAlign: 'center', color: '#fff'}}>Enter a book...</h2> */}
       <input
         type='text'
         placeholder='book title...'
