@@ -5,7 +5,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: url(./images/henry-be-lc7xcWebECc-unsplash.jpg) no-repeat fixed center;
-  background-size: auto;
+  background-size: cover;
   font-size: 18px;
 }
 .App {
